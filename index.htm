@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+  <title>Event Sound</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./tailwindcss.js"></script>
+
+  <style type="text/tailwindcss">
+    @layer base {
+      .audio-item {
+        @apply flex flex-col gap-2 bg-[#eeeeee] p-2 rounded-lg hover:bg-gray-200;
+      }
+
+      .audio-item-group {
+        @apply flex flex-col gap-2;
+      }
+    }
+  </style>
+
+</head>
+<body class="p-6">
+  <div class="container mx-auto">
+    <div class="audio grid grid-cols-6 gap-4">
+      <div class="audio-item">
+        <h2 class="font-bold">Giới thiệu đại biểu</h2>
+
+        <div class="audio-item-group">
+          <p>Nhạc nền</p>
+          <audio controls class="w-full">
+            <source src="./sound/victory-bond.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          
+          <p>Sau khi gọi tên</p>
+          <audio controls class="w-full">
+            <source src="./sound/gioi-thieu-nhan-vat.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+  
+      <div class="audio-item">
+        <h2 class="font-bold">Vỗ tay</h2>
+
+        <div class="audio-item-group">
+          <p>Vỗ tay sự kiện</p>
+          <audio controls class="w-full">
+            <source src="./sound/tieng-vo-tay-su-kien.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+
+        <div class="audio-item-group">
+          <p>Vỗ tay hoan hô</p>
+          <audio controls class="w-full">
+            <source src="./sound/tieng-vo-tay-hoan-ho.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+
+        <div class="audio-item-group">
+          <p>Đám đông vỗ tay, cổ vũ</p>
+          <audio controls class="w-full">
+            <source src="./sound/dam-dong-vo-tay-co-vu.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+
+      <div class="audio-item">
+        <h2 class="font-bold">Khen thưởng</h2>
+
+        <div class="audio-item-group">
+          <p>Hào hùng</p>
+          <audio controls loop class="w-full">
+            <source src="./sound/nhac-khen-thuong-1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+
+          <audio controls loop class="w-full">
+            <source src="./sound/nhac-hao-hung-victory.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+
+        <div class="audio-item-group">
+          <p>Truyền thống</p>
+          <audio controls loop class="w-full">
+            <source src="./sound/victory-bond.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
